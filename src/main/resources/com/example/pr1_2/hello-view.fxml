@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pr1_2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.7" scaleY="0.7">
+      <image>
+         <Image url="@../img/f1.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.7" scaleY="0.7">
+      <image>
+         <Image url="@../img/f2.png" />
+      </image></ImageView>
+   <HBox alignment="CENTER" prefHeight="36.0">
+      <children>
+         <Label text="x=">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="TF_x" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" prefHeight="25.0" prefWidth="60.0">
+            <font>
+               <Font size="16.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="7.0" />
+            </HBox.margin>
+         </TextField>
+         <Label text="y=">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="TF_y" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" prefHeight="25.0" prefWidth="60.0">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+
+    <Label fx:id="LBL_n">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
+   <Label fx:id="LBL_r">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <ImageView fx:id="IV_f" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.7" scaleY="0.7" />
+   <Label fx:id="LBL_k">
+      <font>
+         <Font size="16.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="7.0" />
+      </VBox.margin>
+   </Label>
+    <Button onAction="#onHelloButtonClick" text="Рассчитать!">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+</VBox>
