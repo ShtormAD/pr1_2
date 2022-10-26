@@ -30,8 +30,8 @@ public class HelloController {
         try{
             x = Double.parseDouble(TF_x.getText().replace(',','.'));
             y = Double.parseDouble(TF_y.getText().replace(',','.'));
-            n = Math.pow(10*Math.pow(10,1/10),1/10)*Math.log(x);
-            r = 1+Math.pow(Math.log(Math.pow(y,x)),5);
+            n = Math.pow(10*Math.pow(10, 0.1), 0.1)*Math.log10(x);
+            r = 1+Math.pow(Math.log10(Math.pow(y,x)), 0.2);
             LBL_n.setText("n="+n);
             LBL_r.setText("r="+r);
             if(n+r<5){
